@@ -5,7 +5,8 @@ class Antibiotic:
     category = ""
     eml = False
 
-    def __init__(self, name, klass, atc_code, category, eml):
+    def __init__(self, name=name, klass=klass,
+            atc_code=atc_code, category=category, eml=eml):
         self.name = name
         self.klass = klass
         self.atc_code = atc_code
@@ -37,7 +38,12 @@ def load_antibiotics():
                 atc_code = vals[2]
                 category = vals[3]
                 eml = vals[4]
-                antibiotic = Antibiotic(name, klass, atc_code, category, eml)
+                antibiotic = Antibiotic(
+                        name=name,
+                        klass=klass,
+                        category=category,
+                        atc_code=atc_code,
+                        eml=eml)
                 antibiotics_list.append(antibiotic)
             except Exception as ex:
                 pass
