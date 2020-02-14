@@ -25,16 +25,17 @@ def load_antibiotics():
         lines = file_contents.split("\n")
         antibiotics_list = []
         for line in lines:
-            if len(line) == 0:
-                continue
-            vals = line.split(",")
-            name = vals[0]
-            klass = vals[1]
-            atc_code = vals[2]
-            category = vals[3]
-            eml = vals[4]
-            antibiotic = Antibiotic(name, klass, atc_code, category, eml)
-            antibiotics_list.append(antibiotic)
+            try:
+                vals = line.split(",")
+                name = vals[0]
+                klass = vals[1]
+                atc_code = vals[2]
+                category = vals[3]
+                eml = vals[4]
+                antibiotic = Antibiotic(name, klass, atc_code, category, eml)
+                antibiotics_list.append(antibiotic)
+            except Exception as ex:
+                pass
         for antibiotic in antibiotics_list:
             antibiotic.print()
 
