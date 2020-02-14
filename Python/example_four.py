@@ -13,11 +13,16 @@ class Antibiotic:
         self.eml = eml
 
     def print(self):
-        print("name: " + self.name)
-        print("\tclass:     " + self.klass)
-        print("\tatc_code:  " + self.atc_code)
-        print("\tcategory:  " + self.category)
-        print("\teml:       " + str(self.eml))
+        print("""name: %s
+    class:      %s
+    atc_code:   %s
+    category:   %s
+    eml:        %s""" % (
+            self.name,
+            self.klass,
+            self.atc_code,
+            self.category,
+            self.eml))
 
 def load_antibiotics():
     with open("antibiotics.csv") as antibiotics_file:
