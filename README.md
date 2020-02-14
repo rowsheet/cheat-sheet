@@ -6,3 +6,8 @@ CheatSheet for Python, Java, and C
 Alexander Kleinhans
 
 Test Change 2
+
+### Author:
+Elijah Kleinhans
+
+Welcome to the 60's
