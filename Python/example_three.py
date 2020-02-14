@@ -23,7 +23,7 @@ def read_antibiotics_file_and_print():
             """
             Print the line to the screen.
             """
-            print(line)
+            print(line + "another line")
 
 """
 Don't worrie too much about what this means, this is just the "python" way
