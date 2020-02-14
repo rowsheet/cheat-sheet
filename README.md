@@ -7,7 +7,6 @@ Alexander Kleinhans
 
 Test Change 2
 
-### Author:
-Elijah Kleinhans
-
 Welcome to the 60's
+
+Waiting on the next video/lesson. This shit is the best.
