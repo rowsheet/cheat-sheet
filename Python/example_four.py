@@ -51,9 +51,9 @@ def load_antibiotics():
             antibiotic.print()
 
 """
-Don't worrie too much about what this means, this is just the "python" way
+Don't worry too much about what this means. This is just the "python" way
 of setting the entry point of the file. When you run this python file
-as is (versus including it from another file), it will run this protion.
+as is (versus including it from another file), it will run this portion.
 """
 if __name__ == "__main__":
     load_antibiotics()
