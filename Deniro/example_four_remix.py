@@ -12,11 +12,11 @@ class Deniro:
 
     def print(self):
         print("""title: %s
-                 year:  %s
-                 score: %s""" % (
-                     self.title, 
-                     self.year, 
-                     self.score))
+    year:  %s
+    score: %s""" % (
+        self.title,
+        self.year,
+        self.score))
     
 def load_deniro():
     with open("deniro.csv") as deniro_file:
